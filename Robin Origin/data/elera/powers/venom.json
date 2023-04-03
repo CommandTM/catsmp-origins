@@ -1,0 +1,21 @@
+{
+    "type": "origins:action_on_hit",
+    "name": "Venomous Bite",
+    "description": "Your attack gives poison",
+    "cooldown": 240,
+    "hud_render": {
+        "should_render": true,
+        "bar_index": 4
+    },
+    "bientity_action": {
+        "type": "origins:target_action",
+        "action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:poison",
+                "duration": 40,
+                "amplifier": 1
+            }
+        }
+    }
+}

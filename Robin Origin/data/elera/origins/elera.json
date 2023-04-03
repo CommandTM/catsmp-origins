@@ -1,0 +1,17 @@
+{
+	"powers": [
+		"elera:climbing",
+		"elera:webmaster",
+		"origins:master_of_webs_no_slowdown",
+		"elera:arachnid",
+		"elera:morningsilk",
+		"elera:venom",
+		"elera:no_nutrition_veggie",
+		"elera:cold_debuffs"
+	],
+	"icon": "minecraft:spider_eye",
+	"order": 10,
+	"impact": 2,
+	"name": "The Spider",
+	"description": "The gal with 8 legs and a lot of smarts."
+}

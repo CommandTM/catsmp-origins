@@ -1,0 +1,33 @@
+{
+    "type": "origins:action_over_time",
+    "name": "Bad Habitats",
+    "description": "You struggle to live in colder climates.",
+    "interval": 1,
+    "condition": {
+        "type": "origins:biome",
+        "condition": {
+            "type": "origins:temperature",
+            "comparison": "<=",
+            "compare_to": 0
+        }
+    },
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:slowness",
+                    "duration": 2
+                }
+            },
+            {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:weakness",
+                    "duration": 2
+                }
+            }
+        ]
+    }
+}

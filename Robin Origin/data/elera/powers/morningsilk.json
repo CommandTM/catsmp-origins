@@ -1,0 +1,44 @@
+{
+    "type": "origins:action_on_wake_up",
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:give",
+          "stack": {
+            "item": "minecraft:string"
+          }
+        },
+        {
+            "type": "origins:give",
+            "stack": {
+              "item": "minecraft:string"
+            }
+          },
+          {
+            "type": "origins:give",
+            "stack": {
+              "item": "minecraft:string"
+            }
+          },
+          {
+            "type": "origins:give",
+            "stack": {
+              "item": "minecraft:string"
+            }
+          },
+          {
+            "type": "origins:give",
+            "stack": {
+              "item": "minecraft:string"
+            }
+          },
+        {
+          "type": "origins:play_sound",
+          "sound": "minecraft:entity.spider.ambient"
+        }
+      ]
+    },
+    "name": "Silk(?)",
+    "description": "You know what it really is you milf."
+  }
