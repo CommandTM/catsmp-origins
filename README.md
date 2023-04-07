@@ -17,6 +17,8 @@ The Cat SMP Origins are a set of origins used in the Cat SMP Minecraft server in
 
 (-) Carnivore
 
+(-) Becomes weaker in the cold
+
 ### TJ
 (+) Strength and resistance near villagers
 
