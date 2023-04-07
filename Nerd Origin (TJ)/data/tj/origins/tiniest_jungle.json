@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"tj:villager_powers",
+		"tj:sword_prof",
+		"tj:hand_smelter",
+		"tj:tj_size",
+		"tj:faster_hunger"
+	],
+	"icon": "minecraft:wet_sponge",
+	"order": 10,
+	"impact": 1,
+	"name": "The Minature",
+	"description": "The tiniest it gets, packed with shitty powers!"
+}

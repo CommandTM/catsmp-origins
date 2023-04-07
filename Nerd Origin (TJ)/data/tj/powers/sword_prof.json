@@ -1,0 +1,21 @@
+{
+    "type": "origins:conditioned_attribute",
+    "name": "Sword Proficiency",
+    "description": "You deal more damage with swords.",
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "tj:swords"
+            }
+        }
+    },
+    "modifier": {
+        "attribute": "minecraft:generic.attack_damage",
+        "operation": "addition",
+        "value": 3
+    },
+    "tick_rate": 1
+}

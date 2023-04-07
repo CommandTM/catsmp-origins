@@ -1,0 +1,626 @@
+{
+    "type": "origins:multiple",
+    "coal":{
+        "type": "origins:action_over_time",
+        "interval": 60,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "offhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient" :{
+                    "item": "minecraft:coal_ore"
+                }
+            }
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:coal_ore 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "give @s minecraft:coal 1"
+                }
+            ]
+        }
+    },
+    "deepslate_coal":{
+        "type": "origins:action_over_time",
+        "interval": 60,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "offhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient" :{
+                    "item": "minecraft:deepslate_coal_ore"
+                }
+            }
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:deepslate_coal_ore 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "give @s minecraft:coal 1"
+                }
+            ]
+        }
+    },
+    "iron":{
+        "type": "origins:action_over_time",
+        "interval": 60,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "offhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient" :{
+                    "item": "minecraft:iron_ore"
+                }
+            }
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:iron_ore 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "give @s minecraft:iron_ingot 1"
+                }
+            ]
+        }
+    },
+    "deepslate_iron":{
+        "type": "origins:action_over_time",
+        "interval": 60,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "offhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient" :{
+                    "item": "minecraft:deepslate_iron_ore"
+                }
+            }
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:deepslate_iron_ore 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "give @s minecraft:iron_ingot 1"
+                }
+            ]
+        }
+    },
+    "raw_iron":{
+        "type": "origins:action_over_time",
+        "interval": 60,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "offhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient" :{
+                    "item": "minecraft:raw_iron"
+                }
+            }
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:raw_iron 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "give @s minecraft:iron_ingot 1"
+                }
+            ]
+        }
+    },
+    "copper":{
+        "type": "origins:action_over_time",
+        "interval": 60,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "offhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient" :{
+                    "item": "minecraft:copper_ore"
+                }
+            }
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:copper_ore 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "give @s minecraft:copper_ingot 1"
+                }
+            ]
+        }
+    },
+    "deepslate_copper":{
+        "type": "origins:action_over_time",
+        "interval": 60,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "offhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient" :{
+                    "item": "minecraft:deepslate_copper_ore"
+                }
+            }
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:deepslate_copper_ore 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "give @s minecraft:copper_ingot 1"
+                }
+            ]
+        }
+    },
+    "raw_copper":{
+        "type": "origins:action_over_time",
+        "interval": 60,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "offhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient" :{
+                    "item": "minecraft:raw_copper"
+                }
+            }
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:raw_copper 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "give @s minecraft:copper_ingot 1"
+                }
+            ]
+        }
+    },
+    "gold":{
+        "type": "origins:action_over_time",
+        "interval": 60,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "offhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient" :{
+                    "item": "minecraft:gold_ore"
+                }
+            }
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:gold_ore 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "give @s minecraft:gold_ingot 1"
+                }
+            ]
+        }
+    },
+    "deepslate_gold":{
+        "type": "origins:action_over_time",
+        "interval": 60,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "offhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient" :{
+                    "item": "minecraft:deepslate_gold_ore"
+                }
+            }
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:deepslate_gold_ore 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "give @s minecraft:gold_ingot 1"
+                }
+            ]
+        }
+    },
+    "raw_gold":{
+        "type": "origins:action_over_time",
+        "interval": 60,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "offhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient" :{
+                    "item": "minecraft:raw_gold"
+                }
+            }
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:raw_gold 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "give @s minecraft:gold_ingot 1"
+                }
+            ]
+        }
+    },
+    "nether_gold":{
+        "type": "origins:action_over_time",
+        "interval": 60,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "offhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient" :{
+                    "item": "minecraft:nether_gold_ore"
+                }
+            }
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:nether_gold_ore 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "give @s minecraft:gold_ingot 1"
+                }
+            ]
+        }
+    },
+    "blackstone":{
+        "type": "origins:action_over_time",
+        "interval": 60,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "offhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient" :{
+                    "item": "minecraft:gilded_blackstone"
+                }
+            }
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:gilded_blackstone 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "give @s minecraft:gold_ingot 1"
+                }
+            ]
+        }
+    },
+    "redstone":{
+        "type": "origins:action_over_time",
+        "interval": 60,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "offhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient" :{
+                    "item": "minecraft:redstone_ore"
+                }
+            }
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:redstone_ore 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "give @s minecraft:redstone 1"
+                }
+            ]
+        }
+    },
+    "deepslate_redstone":{
+        "type": "origins:action_over_time",
+        "interval": 60,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "offhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient" :{
+                    "item": "minecraft:deepslate_redstone_ore"
+                }
+            }
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:deepslate_redstone_ore 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "give @s minecraft:redstone 1"
+                }
+            ]
+        }
+    },
+    "emerald":{
+        "type": "origins:action_over_time",
+        "interval": 60,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "offhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient" :{
+                    "item": "minecraft:emerald_ore"
+                }
+            }
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:emerald_ore 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "give @s minecraft:emerald 1"
+                }
+            ]
+        }
+    },
+    "deepslate_emerald":{
+        "type": "origins:action_over_time",
+        "interval": 60,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "offhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient" :{
+                    "item": "minecraft:deepslate_emerald_ore"
+                }
+            }
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:deepslate_emerald_ore 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "give @s minecraft:emerald 1"
+                }
+            ]
+        }
+    },
+    "lapis":{
+        "type": "origins:action_over_time",
+        "interval": 60,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "offhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient" :{
+                    "item": "minecraft:lapis_ore"
+                }
+            }
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:lapis_ore 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "give @s minecraft:lapis_lazuli 1"
+                }
+            ]
+        }
+    },
+    "deepslate_lapis":{
+        "type": "origins:action_over_time",
+        "interval": 60,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "offhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient" :{
+                    "item": "minecraft:deepslate_lapis_ore"
+                }
+            }
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:deepslate_lapis_ore 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "give @s minecraft:lapis_lazuli 1"
+                }
+            ]
+        }
+    },
+    "diamond":{
+        "type": "origins:action_over_time",
+        "interval": 60,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "offhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient" :{
+                    "item": "minecraft:diamond_ore"
+                }
+            }
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:diamond_ore 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "give @s minecraft:diamond 1"
+                }
+            ]
+        }
+    },
+    "deepslate_diamond":{
+        "type": "origins:action_over_time",
+        "interval": 60,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "offhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient" :{
+                    "item": "minecraft:deepslate_diamond_ore"
+                }
+            }
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:deepslate_diamond_ore 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "give @s minecraft:diamond 1"
+                }
+            ]
+        }
+    },
+    "quartz":{
+        "type": "origins:action_over_time",
+        "interval": 60,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "offhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient" :{
+                    "item": "minecraft:nether_quartz_ore"
+                }
+            }
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s minecraft:nether_quartz_ore 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "give @s minecraft:quartz 1"
+                }
+            ]
+        }
+    },
+    "cobalt":{
+        "type": "origins:action_over_time",
+        "interval": 60,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "offhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient" :{
+                    "item": "tconstruct:cobalt_ore"
+                }
+            }
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s tconstruct:cobalt_ore 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "give @s tconstruct:cobalt_ingot 1"
+                }
+            ]
+        }
+    },
+    "name": "The Super 626-Handheld-Smelter",
+    "description": "Put ores in your off-hand, and watch them smelt!"
+}
