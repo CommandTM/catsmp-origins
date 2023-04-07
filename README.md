@@ -16,6 +16,20 @@ The Cat SMP Origins are a set of origins used in the Cat SMP Minecraft server in
 (+) Produces “silk” every morning
 
 (-) Carnivore
+
+### TJ
+(+) Strength and resistance near villagers
+
+(+) Damage and speed increase with sword and bow
+
+(+) Can Craft Slabs In Inventory
+
+(-) Smaller height
+
+(-) Only wear up to iron armor
+
+(-) Lose hunger quicker
+
 ## Download the ZIP
 > N/A
 ### Installation Instructions
