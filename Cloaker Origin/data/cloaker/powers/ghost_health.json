@@ -1,0 +1,10 @@
+{
+	"type": "origins:attribute",
+	"name": "Ghostly Weakness",
+	"description": "You only have three hearts because of your ghostly form.",
+	"modifier": {
+		"attribute": "minecraft:generic.max_health",
+		"operation": "addition",
+		"value": -8
+	}
+}

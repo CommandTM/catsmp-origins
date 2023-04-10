@@ -1,0 +1,17 @@
+{
+	"powers": [
+		"cloaker:golem_health",
+		"cloaker:golem_size",
+		"cloaker:golem_speed",
+		"cloaker:golem_jump",
+		"cloaker:axe_prof",
+		"cloaker:super_jump",
+		"cloaker:to_ghost"
+	],
+	"icon": "minecraft:iron_block",
+	"order": 10,
+	"impact": 3,
+	"name": "Golem Form",
+	"description": "Cloaker's golem form.",
+	"unchoosable": true
+}

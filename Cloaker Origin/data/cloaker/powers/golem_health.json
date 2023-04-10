@@ -1,0 +1,10 @@
+{
+	"type": "origins:attribute",
+	"name": "Golem Form",
+	"description": "As a golem, You have more health, a bigger size, a slower speed, and can't jump.",
+	"modifier": {
+		"attribute": "minecraft:generic.max_health",
+		"operation": "addition",
+		"value": 10
+	}
+}

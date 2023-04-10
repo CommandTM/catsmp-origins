@@ -1,0 +1,31 @@
+{
+    "type": "origins:action_on_entity_use",
+    "name": "Golem Form",
+    "description": "You can switch to golem form by taking over a golem.",
+    "bientity_condition": {
+        "type": "origins:target_condition",
+        "condition": {
+            "type": "origins:entity_type",
+            "entity_type": "minecraft:iron_golem"
+        }
+    },
+    "bientity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:actor_action",
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "origin set @s origins:origin cloaker:golem_form"
+                }
+            },
+            {
+                "type": "origins:target_action",
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "tp @s ~ -64 ~"
+                }
+            }
+        ]
+    }
+}

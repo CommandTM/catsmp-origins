@@ -1,0 +1,15 @@
+{
+	"powers": [
+		"cloaker:ghost_health",
+		"cloaker:ghost_armor",
+		"cloaker:phase",
+		"cloaker:ghost_model",
+		"cloaker:bow_prof",
+		"cloaker:to_golem"
+	],
+	"icon": "travelersbackpack:iron_golem",
+	"order": 10,
+	"impact": 3,
+	"name": "The Golem",
+	"description": "The entity that can possess a golem body, and also take a ghostly form"
+}

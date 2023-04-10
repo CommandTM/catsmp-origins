@@ -1,0 +1,52 @@
+{
+    "type": "origins:multiple",
+    "name": "Ghost Form",
+    "description": "You can phase through blocks, but you are slightly transperent and can't wear anythign better than iron armor.",
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": true,
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    },
+    "phase": {
+        "type": "origins:phasing",
+        "blacklist": true,
+        "render_type": "blindness",
+        "view_distance": 10,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "cloaker:phase_toggle"
+        },
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "origins:unphasable"
+        },
+        "phase_down_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:on_block"
+                }
+            ]
+        }
+    },
+    "weakness": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "cloaker:phase_toggle"
+        },
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:weakness",
+                "duration": 40
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "type": "origins:active_self",
+    "hidden": true,
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "origin set @s origins:origin cloaker:ghost_form"
+    },
+    "key": {
+        "key": "key.origins.primary_active"
+    }
+}
