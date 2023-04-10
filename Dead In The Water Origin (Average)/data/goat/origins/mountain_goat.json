@@ -1,0 +1,19 @@
+{
+	"powers": [
+		"goat:thick_coat",
+		"goat:thick_coat_a",
+		"goat:ram",
+		"goat:ram_a",
+		"origins:fresh_air",
+		"origins:fall_immunity",
+		"goat:tough",
+		"goat:high_jump",
+		"goat:high_jump_a",
+		"goat:no_nutrition_meat"
+	],
+	"icon": "minecraft:white_wool",
+	"order": 5,
+	"impact": 1,
+	"name": "Mountain Goat",
+	"description": "Protective of your home, you often ram unfamiliar people off cliffs where you live."
+}
