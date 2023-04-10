@@ -24,11 +24,9 @@ The Cat SMP Origins are a set of origins used in the Cat SMP Minecraft server in
 
 (+) Damage and speed increase with sword and bow
 
-(+) Can Craft Slabs In Inventory
+(+) Can smelt ores in off-hand
 
 (-) Smaller height
-
-(-) Only wear up to iron armor
 
 (-) Lose hunger quicker
 
