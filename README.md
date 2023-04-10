@@ -2,6 +2,31 @@
 ## Info
 The Cat SMP Origins are a set of origins used in the Cat SMP Minecraft server in it's fourth season. Each member has their own origin. This is an add-on to the popular Minecraft mod [Origins](https://www.curseforge.com/minecraft/mc-mods/origins), more specificy the [Forge release](https://www.curseforge.com/minecraft/mc-mods/origins-forge). This repository has two uses; to keep the files safe somewhere in a cloud location, and to allow the members to download their origins for single-player use.
 ## Power List
+### Cloaker
+Ghost Form
+(+) Can Phase Through Blocks
+
+(+) Extra Bow Damage
+
+() Transparent Model
+
+(-) 6 Hearts
+
+(-) Maximum of Iron Armor
+
+{Switch, Requires an iron golem}
+
+Golem Form
+(+) 15 Hearts
+
+(+) Extra Axe Damage
+
+(+) Super Jump (Because Of This Power Fall Damage Is Nullified In Golem Mode)
+
+() Iron Golem Size
+
+(-) Slower Speed
+
 ### Robin
 (+) Climb in webs
 
