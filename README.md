@@ -2,6 +2,21 @@
 ## Info
 The Cat SMP Origins are a set of origins used in the Cat SMP Minecraft server in it's fourth season. Each member has their own origin. This is an add-on to the popular Minecraft mod [Origins](https://www.curseforge.com/minecraft/mc-mods/origins), more specificy the [Forge release](https://www.curseforge.com/minecraft/mc-mods/origins-forge). This repository has two uses; to keep the files safe somewhere in a cloud location, and to allow the members to download their origins for single-player use.
 ## Power List
+### Average
+(+) Higher jump as an ability
+
+(+) Ram ability
+
+(+) More health
+
+(+) No fall damage
+
+() Move faster in colder biomes, and slower in warm biomes
+
+(-) Take more fire damage
+
+(-) Vegetarian
+
 ### Cloaker
 Ghost Form
 (+) Can Phase Through Blocks
