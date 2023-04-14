@@ -1,0 +1,24 @@
+{
+	"type": "origins:multiple",
+	"name": "Magic Relient",
+	"description": "You have less health and weakness from becomign relient on your magic.",
+	"weakness": {
+		"type": "origins:action_over_time",
+		"interval": 1,
+		"entity_action": {
+			"type": "origins:apply_effect",
+			"effect": {
+				"effect": "minecraft:weakness",
+				"duration": 2
+			}
+		}
+	},
+	"health": {
+		"type": "origins:attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.max_health",
+			"operation": "addition",
+			"value": -6
+		}
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"powers": [
+		"sofi:debuffs",
+		"sofi:auras"
+	],
+	"icon": "minecraft:potion",
+	"order": 10,
+	"impact": 3,
+	"name": "The Witch",
+	"description": "Use your magical spells to help or hinder others."
+}

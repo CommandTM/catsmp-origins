@@ -1,0 +1,245 @@
+{
+    "type": "origins:multiple",
+    "name": "Magical Auras",
+    "description": "Use your magical auras to buff everything and everyone around you!",
+    "aura_define": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 5,
+        "start_value": 0,
+        "hud_render": {
+            "should_render": true,
+            "bar_index": 0
+        }
+    },
+    "change_forward": {
+        "type": "origins:active_self",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "sofi:auras_aura_define",
+            "comparison": "<=",
+            "compare_to": 4
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "sofi:auras_aura_define",
+            "change": 1
+        },
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    },
+    "change_forward2": {
+        "type": "origins:active_self",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "sofi:auras_aura_define",
+            "comparison": "==",
+            "compare_to": 5
+        },
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "resource set @s sofi:auras_aura_define 0"
+        },
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    },
+    "change_backwards": {
+        "type": "origins:active_self",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "sofi:auras_aura_define",
+            "comparison": ">=",
+            "compare_to": 1
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "sofi:auras_aura_define",
+            "change": -1
+        },
+        "key": {
+            "key": "key.origins.secondary_active"
+        }
+    },
+    "regen_aura": {
+        "type": "origins:action_over_time",
+        "interval": 60,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "sofi:auras_aura_define",
+            "comparison": "==",
+            "compare_to": 1
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run effect give @e[distance=1..5] minecraft:regeneration 3"
+                },
+                {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:regeneration",
+                        "duration": 60
+                    }
+                },
+                {
+                    "type": "origins:spawn_particles",
+                    "particle": "minecraft:heart",
+                    "count": 50,
+                    "spread": {"x":2, "y": 2, "z":2}
+                }
+            ]
+        }
+    },
+    "strong_aura": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "sofi:auras_aura_define",
+            "comparison": "==",
+            "compare_to": 2
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run effect give @e[distance=1..5] minecraft:strength 1"
+                },
+                {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:strength",
+                        "duration": 2
+                    }
+                },
+                {
+                    "type": "origins:spawn_particles",
+                    "particle": "minecraft:angry_villager",
+                    "count": 1,
+                    "spread": {"x":2, "y": 0, "z":2},
+                    "offset_y": -0.25
+                }
+            ]
+        }
+    },
+    "move_aura": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "sofi:auras_aura_define",
+            "comparison": "==",
+            "compare_to": 3
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run effect give @e[distance=1..5] minecraft:speed 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run effect give @e[distance=1..5] minecraft:jump_boost 1 1"
+                },
+                {
+                    "type": "origins:apply_effect",
+                    "effects": [
+                        {
+                            "effect": "minecraft:speed",
+                            "duration": 2
+                        },
+                        {
+                            "effect": "minecraft:jump_boost",
+                            "duration": 2,
+                            "amplifier": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "water_aura": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "sofi:auras_aura_define",
+            "comparison": "==",
+            "compare_to": 4
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run effect give @e[distance=1..5] minecraft:water_breathing 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run effect give @e[distance=1..5] minecraft:dolphins_grace 1"
+                },
+                {
+                    "type": "origins:apply_effect",
+                    "effects": [
+                        {
+                            "effect": "minecraft:water_breathing",
+                            "duration": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "effect give @s minecraft:dolphins_grace 1"
+                },
+                {
+                    "type": "origins:spawn_particles",
+                    "particle": "minecraft:bubble",
+                    "count": 5,
+                    "spread": {"x":2, "y": 2, "z":2}
+                }
+            ]
+        }
+    },
+    "dark_aura": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "sofi:auras_aura_define",
+            "comparison": "==",
+            "compare_to": 5
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run effect give @e[distance=1..5] minecraft:night_vision 12"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run effect give @e[distance=1..5] minecraft:invisibility 1"
+                },
+                {
+                    "type": "origins:apply_effect",
+                    "effects": [
+                        {
+                            "effect": "minecraft:night_vision",
+                            "duration": 240
+                        },
+                        {
+                            "effect": "minecraft:invisibility",
+                            "duration": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
