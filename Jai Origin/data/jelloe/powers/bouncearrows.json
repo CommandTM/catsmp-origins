@@ -1,0 +1,9 @@
+{
+    "type": "origins:invulnerability",
+    "damage_condition": {
+        "type": "origins:projectile",
+        "name": "minecraft:arrow"
+    },
+    "name": "Deflection",
+    "description": "Those puny skelebones wont be able to hurt you now! Your body can reflect arrows with ease and take no damage."
+}

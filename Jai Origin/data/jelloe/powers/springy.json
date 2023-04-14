@@ -1,0 +1,137 @@
+{
+    "type": "origins:multiple",
+    "name": "Bouncy",
+    "description": "Boing™.",
+    "jump": {
+        "type": "origins:modify_jump",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:entity.slime.jump player @a[distance=..10] ~ ~ ~ 2 1.5 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:item_slime ~ ~ ~ 0.3 0.1 0.3 0.1 10 normal @a"
+                }
+            ]
+        }
+    },
+    "bounce": {
+        "type": "origins:action_on_land",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:entity.slime.jump player @a[distance=..10] ~ ~ ~ 2 1 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:item_slime ~ ~ ~ 0.3 0.1 0.3 0.1 20 normal @a"
+                },
+                {
+                    "type": "origins:if_else_list",
+                    "actions": [
+                        {
+                            "condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:fall_distance",
+                                        "compare_to": 3,
+                                        "comparison": ">"
+                                    },
+                                    {
+                                        "type": "origins:fall_distance",
+                                        "compare_to": 5,
+                                        "comparison": "<="
+                                    }
+                                ]
+                            },
+                            "action": {
+                                "type": "origins:add_velocity",
+                                "y": 0.55
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:fall_distance",
+                                        "compare_to": 5,
+                                        "comparison": ">"
+                                    },
+                                    {
+                                        "type": "origins:fall_distance",
+                                        "compare_to": 10,
+                                        "comparison": "<="
+                                    }
+                                ]
+                            },
+                            "action": {
+                                "type": "origins:add_velocity",
+                                "y": 0.75
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:fall_distance",
+                                        "compare_to": 10,
+                                        "comparison": ">"
+                                    },
+                                    {
+                                        "type": "origins:fall_distance",
+                                        "compare_to": 15,
+                                        "comparison": "<="
+                                    }
+                                ]
+                            },
+                            "action": {
+                                "type": "origins:add_velocity",
+                                "y": 1
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:fall_distance",
+                                        "compare_to": 15,
+                                        "comparison": ">"
+                                    },
+                                    {
+                                        "type": "origins:fall_distance",
+                                        "compare_to": 25,
+                                        "comparison": "<="
+                                    }
+                                ]
+                            },
+                            "action": {
+                                "type": "origins:add_velocity",
+                                "y": 1.25
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "origins:fall_distance",
+                                "compare_to": 25,
+                                "comparison": ">"
+                            },
+                            "action": {
+                                "type": "origins:add_velocity",
+                                "y": 1.75
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

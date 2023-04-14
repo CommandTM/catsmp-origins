@@ -1,0 +1,9 @@
+{
+    "type": "origins:invulnerability",
+    "damage_condition": {
+        "type": "origins:name",
+        "name": "fall"
+    },
+    "name": "No bones",
+    "description": "Without any bones to break, you don't take any damage from mankinds oldest enemy. Gravity."
+}

@@ -1,0 +1,18 @@
+{
+	"powers": [
+		"jelloe:skin",
+		"jelloe:springy",
+		"jelloe:nobones",
+		"jelloe:bouncearrows",
+		"jelloe:melting",
+		"jelloe:dissolvent",
+		"jelloe:slimenom",
+		"jelloe:unheal",
+		"jelloe:friendly"
+	],
+	"icon": "minecraft:slime_ball",
+	"order": 10,
+	"impact": 1,
+	"name": "Slimy Sucker",
+	"description": "Gooey, gunky, and GAY."
+}

@@ -1,0 +1,29 @@
+{
+    "type": "origins:modify_damage_taken",
+    "modifier": {
+        "operation": "multiply_total",
+        "value": 4
+    },
+    "damage_condition": {
+        "type": "origins:or",
+        "conditions": [{
+                "type": "origins:name",
+                "name": "inFire"
+            },
+            {
+                "type": "origins:name",
+                "name": "onFire"
+            },
+            {
+                "type": "origins:name",
+                "name": "inLava"
+            },
+            {
+                "type": "origins:name",
+                "name": "hotFloor"
+            }
+        ]
+    },
+    "name": "Fire Vulnerability",
+    "description": "Due to your green nature you take more damage to hot sources."
+} 

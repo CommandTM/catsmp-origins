@@ -1,0 +1,51 @@
+{
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team add slime"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join slime @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join slime @e[type=minecraft:slime]"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join slime @e[type=minecraft:magma_cube]"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join slime @e[type=tconstruct:earth_slime]"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join slime @e[type=tconstruct:sky_slime]"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join slime @e[type=tconstruct:ender:slime]"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join slime @e[type=earthmobsmod:tropical_slime]"
+            }
+        ]
+    },
+    "name": "Slime Buds",
+    "description": "Goopy Guys hangin' around gunkin around."
+}
