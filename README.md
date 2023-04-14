@@ -42,6 +42,23 @@ Golem Form
 
 (-) Slower Speed
 
+### Jai
+(+) Arrows bounce off you
+
+(+) Slimes are friendly with you
+
+(+) You are bouncy
+
+(+) Goop absorb for health (??)
+
+() Green and transparent
+
+(-) Fire hurts more
+ 
+(-) Nausea in water
+
+(-) Half healing from most sources
+
 ### Robin
 (+) Climb in webs
 
