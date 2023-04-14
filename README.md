@@ -59,6 +59,19 @@ Golem Form
 
 (-) Becomes weaker in the cold
 
+### Sofi
+(+) Magic Support Auras
+- Regen
+- Strength
+- Jump 2 + Speed
+- W. Breathing + D. Grace
+- Night vision + Invis
+
+(-) Less Health
+
+(-) Weakness
+
+
 ### TJ
 (+) Strength and resistance near villagers
 
