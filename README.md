@@ -16,6 +16,14 @@ The Cat SMP Origins are a set of origins used in the Cat SMP Minecraft server in
 (-) Take more fire damage
 
 (-) Vegetarian
+### BDY
+(+) Immune to fire damage
+
+(+) Natural Fire Aspect
+
+(-) Takes Damage in Water
+
+(-) Spawns in the Nether
 
 ### Cloaker
 Ghost Form
