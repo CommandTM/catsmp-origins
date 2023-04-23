@@ -4,5 +4,7 @@
     "entity_action": {
         "type": "origins:set_on_fire",
         "duration": 8
-    }
+    },
+    "name": "Natural Fire Aspect",
+    "description": "Your attacks set enemies on fire"
 }
