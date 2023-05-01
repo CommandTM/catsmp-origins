@@ -26,7 +26,7 @@ The Cat SMP Origins are a set of origins used in the Cat SMP Minecraft server in
 (-) Spawns in the Nether
 
 ### Cloaker
-Ghost Form
+**Ghost Form**
 
 (+) Can Phase Through Blocks
 
@@ -40,7 +40,7 @@ Ghost Form
 
 {Switch, Requires an iron golem}
 
-Golem Form
+**Golem Form**
 
 (+) 15 Hearts
 
@@ -70,7 +70,7 @@ Golem Form
 (-) Half healing from most sources
 
 ### Murph
-Land Form
+**Land Form**
 
 (+) More Health
 
@@ -86,7 +86,7 @@ Land Form
 
 {Switch: 20 Second Cooldown, Costs Eight Feathers}
 
-Sea Form
+**Sea Form**
 
 (+) Regen
 
