@@ -52,6 +52,15 @@ The Cat SMP Origins are a set of origins used in the Cat SMP Minecraft server in
 
 (-) Slower Speed
 
+### Derred
+(+) Faster base speed
+
+(+) More speed near musical blocks
+
+() Explode on death
+
+(-) Less health
+
 ### Jai
 (+) Arrows bounce off you
 
