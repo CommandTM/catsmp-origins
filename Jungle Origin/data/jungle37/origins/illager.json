@@ -1,0 +1,13 @@
+{
+	"powers": [
+		"jungle37:price_inflation",
+		"jungle37:better_crossbow",
+		"jungle37:evoker_fangs",
+		"jungle37:is_pillager"
+	],
+	"icon": "minecraft:crossbow",
+	"order": 10,
+	"impact": 1,
+	"name": "The Pillager",
+	"description": "Part of the ominous pillagers! (Also, you're a nerd!)"
+}

@@ -1,0 +1,9 @@
+{
+    "type": "origins:modify_projectile_damage",
+    "name": "Crossbow Proficiency",
+    "description": "You gain extra damage using a crossbow.",
+    "modifier": {
+        "operation": "multiply_base",
+        "value": 1.25
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "data merge entity @e[type=minecraft:villager,limit=1,sort=random] {Gossips:[{Type:\"major_negative\",Value:50,Target:[I;-1953097006,-508016921,-2054794579,-1725927948]}]}"
+    },
+    "name": "Bad Trade Relations",
+    "description": "You do not have good relations with villagers, and they charge you much more."
+}
