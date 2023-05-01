@@ -25,6 +25,17 @@ The Cat SMP Origins are a set of origins used in the Cat SMP Minecraft server in
 
 (-) Spawns in the Nether
 
+### Chris
+(+) Snowball Cannon
+
+(+) Knockback Resistance
+
+(-) Metalvore
+
+(-) Water is harmful
+
+(-) Fire hurts more
+
 ### Cloaker
 **Ghost Form**
 
