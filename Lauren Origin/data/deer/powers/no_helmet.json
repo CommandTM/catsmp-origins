@@ -1,0 +1,20 @@
+{
+    "type": "origins:restrict_armor",
+    "head": {
+        "type": "origins:ingredient",
+        "ingredient":{
+            "tag": "deer:hats"
+        }
+    },
+    "chest": {
+        "type": "origins:empty"
+    },
+    "legs": {
+        "type": "origins:empty"
+    },
+    "feet": {
+        "type": "origins:empty"
+    },
+    "name": "Antlers",
+    "description": "You have antlers, and therefore can't wear hats."
+}
