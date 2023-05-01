@@ -78,6 +78,15 @@ The Cat SMP Origins are a set of origins used in the Cat SMP Minecraft server in
 
 (-) Half healing from most sources
 
+### Jungle
+(+) Crossbow Proficiency
+
+(+) Can summon Evoker fangs as an attack
+
+(-) Iron golems are instantly aggressive
+
+(-) Increased villager prices 
+
 ### Murph
 **Land Form**
 
