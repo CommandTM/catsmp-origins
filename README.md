@@ -109,6 +109,22 @@ The Cat SMP Origins are a set of origins used in the Cat SMP Minecraft server in
 
 (-) Less Health
 
+### Olive
+(+) Produce dragon's breath every morning
+
+(+) Natural elytra
+
+(+) Damage resistance
+
+(+) Friendly with Phantoms
+
+(-) Weak to arrows
+
+(-) Carnivore
+
+(-) You MUST sleep high in the sky
+
+
 ### Robin
 (+) Climb in webs
 
