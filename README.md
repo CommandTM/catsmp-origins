@@ -27,6 +27,7 @@ The Cat SMP Origins are a set of origins used in the Cat SMP Minecraft server in
 
 ### Cloaker
 Ghost Form
+
 (+) Can Phase Through Blocks
 
 (+) Extra Bow Damage
@@ -40,6 +41,7 @@ Ghost Form
 {Switch, Requires an iron golem}
 
 Golem Form
+
 (+) 15 Hearts
 
 (+) Extra Axe Damage
@@ -66,6 +68,37 @@ Golem Form
 (-) Nausea in water
 
 (-) Half healing from most sources
+
+### Murph
+Land Form
+
+(+) More Health
+
+(+) Faster Mining Speed
+
+() Air Breathing
+
+(-) Hunger Go Down, WEEEE
+
+(-) Bad Water Movement
+
+(-) Gain Tipsy Near Llamas
+
+{Switch: 20 Second Cooldown, Costs Eight Feathers}
+
+Sea Form
+
+(+) Regen
+
+(+) Water Breathing
+
+(+) Dolphin’s Grace
+
+(-) Slower Mining Speed
+
+(-) No Air >=(
+
+(-) Less Health
 
 ### Robin
 (+) Climb in webs
