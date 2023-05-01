@@ -1,0 +1,17 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "minecraft:note_block",
+            "required": false
+        },
+        {
+            "id": "minecraft:jukebox",
+            "required": false
+        },
+        {
+            "id": "minecraft:bell",
+            "required": false
+        }
+    ]
+}

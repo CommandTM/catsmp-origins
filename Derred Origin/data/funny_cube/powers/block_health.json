@@ -1,0 +1,10 @@
+{
+    "type": "origins:attribute",
+    "name": "Fragile",
+    "description": "You die much easier",
+    "modifier": {
+        "attribute": "minecraft:generic.max_health",
+        "operation": "addition",
+        "value": -10
+    }
+}

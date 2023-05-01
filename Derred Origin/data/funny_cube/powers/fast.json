@@ -1,0 +1,14 @@
+{
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:speed",
+            "duration": 2,
+            "show_particles": false
+        }
+    },
+    "name": "Higher Tempo",
+    "description": "You move at a higher tempo."
+}

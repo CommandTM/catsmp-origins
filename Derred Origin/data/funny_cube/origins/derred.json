@@ -1,0 +1,13 @@
+{
+	"powers": [
+		"funny_cube:block_health",
+		"funny_cube:fast",
+		"funny_cube:music_buffs",
+		"funny_cube:boom_boom"
+	],
+	"icon": "casinocraft:module_mino_cyan",
+	"order": 10,
+	"impact": 1,
+	"name": "The Cube",
+	"description": "They seem to never stop moving..."
+}

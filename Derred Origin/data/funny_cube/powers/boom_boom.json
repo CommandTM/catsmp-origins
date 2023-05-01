@@ -1,0 +1,17 @@
+{
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "condition": {
+        "type": "origins:health",
+        "comparison": "==",
+        "compare_to": 0
+    },
+    "rising_action": {
+        "type": "origins:explode",
+        "power": 2,
+        "destruction_type": "none",
+        "damage_self": true
+    },
+    "name": "Chemically Unstable",
+    "description": "You explode on death."
+}
