@@ -1,0 +1,46 @@
+{
+    "name": "Carnivore",
+    "description": "No Plants?",
+    "type": "origins:multiple",
+    "no_nutrition": {
+        "type": "origins:modify_food",
+        "prevent_effects": true,
+        "item_condition": {
+            "inverted": true,
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "origins:meat"
+            }
+        },
+        "food_modifier": {
+            "operation": "multiply_total",
+            "value": -1
+        },
+        "saturation_modifier": {
+            "operation": "multiply_total",
+            "value": -1
+        }
+    },
+    "tooltip": {
+        "type": "origins:tooltip",
+        "item_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "inverted": true,
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "tag": "origins:meat"
+                    }
+                },
+                {
+                    "type": "origins:food"
+                }
+            ]
+        },
+        "text": {
+            "text": "Inedible",
+            "color": "red"
+        }
+    }
+}
