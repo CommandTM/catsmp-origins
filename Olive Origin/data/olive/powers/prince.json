@@ -1,0 +1,26 @@
+{
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team add dragon"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join dragon @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join dragon @e[type=minecraft:phantoms]"
+            }
+        ]
+    },
+    "name": "Dragon Subjects",
+    "description": "As your royal subjects, phantoms wont harrass you."
+}

@@ -1,0 +1,18 @@
+{
+	"powers": [
+		"olive:elytra",
+		"olive:dragonbreath",
+		"olive:carnivore",
+		"olive:air",
+		"olive:scales",
+		"olive:arrowouch",
+		"olive:blastres",
+		"olive:hearts",
+		"olive:prince"
+	],
+	"icon": "minecraft:dragon_breath",
+	"order": 10,
+	"impact": 1,
+	"name": "Dragon Prince",
+	"description": "Gay Dragon, that's all you need to know."
+}

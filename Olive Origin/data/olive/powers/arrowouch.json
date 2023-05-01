@@ -1,0 +1,21 @@
+{
+    "type": "origins:modify_damage_taken",
+    "modifier": {
+        "operation": "addition",
+        "value": 7
+    },
+    "damage_condition": {
+        "type": "origins:or",
+        "conditions": [{
+                "type": "origins:projectile",
+                "projectile": "minecraft:arrow"
+            },
+            {
+                "type": "origins:projectile",
+                "projectile": "minecraft:spectral_arrow"
+            }
+        ]
+    },
+    "name": "Achillies Scale",
+    "description": "Although you are very strong, your scales are not much good against swift and sharp arrows."
+}

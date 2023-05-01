@@ -1,0 +1,11 @@
+{
+    "type":"origins:modify_damage_taken",
+    "modifier": {
+        "operation": "add_base_early",
+        "value": -6,
+        "name":"Lightweight damage reduction"
+    },
+    "damage_condition": {
+        "type":"origins:explosion.player"
+    }
+}

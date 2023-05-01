@@ -1,0 +1,11 @@
+{
+    "type": "origins:prevent_sleep",
+    "block_condition": {
+      "type": "origins:height",
+      "comparison": "<",
+      "compare_to": 120
+    },
+    "message": "origins.avian_sleep_fail",
+    "name": "Need for air",
+    "description": "You need fresh air to get a good nights sleep."
+  }

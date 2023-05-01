@@ -1,0 +1,11 @@
+{
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.max_health",
+        "value": 4,
+        "operation": "addition"
+    },
+    "name": "Fuck off",
+    "description": "You shouln't be able to read this.",
+    "hidden": true
+}
