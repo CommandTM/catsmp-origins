@@ -1,0 +1,18 @@
+{
+    "type": "origins:invulnerability",
+    "damage_condition": {
+        "type": "origins:or",
+        "conditions": [{
+                "type": "origins:name",
+                "name": "inFire"
+            },
+            {
+                "type": "origins:name",
+                "name": "onFire"
+            }
+        ]
+    },
+    "name": "Heat Resist Metal",
+    "description": "Heat is less effective on your steel, only magma and lava can melt you."    
+}
+            

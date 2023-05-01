@@ -1,0 +1,60 @@
+{
+	"type": "origins:active_self",
+	"cooldown": 20,
+	"hud_render": {
+	  "should_render": false
+	},
+	"condition": {
+	  "type": "origins:and",
+	  "conditions": [
+		{
+		  "type": "origins:equipped_item",
+		  "equipment_slot": "mainhand",
+		  "item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+			  "item": "tconstruct:queens_slime_ingot"
+			}
+		  }
+		},
+		{
+		  "type": "origins:food_level",
+		  "comparison": "<",
+		  "compare_to": 20
+		}
+	  ]
+	},
+	"entity_action": {
+	  "type": "origins:and",
+	  "actions": [
+		{
+		  "type": "origins:execute_command",
+		  "command": "clear @s tconstruct:queens_slime_ingot 1"
+		},
+		{
+		  "type": "origins:execute_command",
+		  "command": "playsound minecraft:block.grindstone.use player @s ~ ~ ~ 1 1"
+		},
+		{
+		  "type": "origins:feed",
+		  "food": 9,
+		  "saturation": 0.625
+		},
+		{
+			"type": "origins:apply_effect",
+			"effect": {
+				"effect": "farmersdelight:nourishment",
+				"duration": 4800,
+				"show_particles": false
+			}
+		}
+	  ]
+	},
+	"key": {
+	  "key": "key.use",
+	  "continuous": true
+	},
+	"name": "Metal Muncher",
+	"description": "Your mechanical body has no room for normal food, instead, you eat metals.",
+	"hidden": true
+}

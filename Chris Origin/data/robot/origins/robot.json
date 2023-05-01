@@ -1,0 +1,24 @@
+{
+	"powers": [
+		"robot:steelcrunch",
+		"robot:goldencrunch",
+		"robot:coppercrunch",
+		"robot:heatresmetal",
+		"robot:waterdamage",
+		"robot:noeat",
+		"robot:snow_ball",
+		"robot:no_nutrition",
+		"robot:slimesteelcrunch",
+		"robot:pigsteelcrunch",
+		"robot:amebronzecrunch",
+		"robot:rosegoldcrunch",
+		"robot:cobaltcrunch",
+		"robot:queenslimecrunch",
+		"robot:heptatizoncrunch"
+	],
+	"icon": "minecraft:iron_nugget",
+	"order": 10,
+	"impact": 3,
+	"name": "The Sentient Bots",
+	"description": "The Robot uprising is kinda on its way, I guess. It's pretty fun."
+}

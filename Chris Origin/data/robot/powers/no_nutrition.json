@@ -1,0 +1,27 @@
+{
+    "type": "origins:multiple",
+    "name": "No Nutrition",
+    "description": "You can not eat food",
+    "no_nutrition": {
+        "type": "origins:modify_food",
+        "prevent_effects": true,
+        "food_modifier": {
+            "operation": "multiply_total",
+            "value": -1
+        },
+        "saturation_modifier": {
+            "operation": "multiply_total",
+            "value": -1
+        }
+    },
+    "tooltip": {
+        "type": "origins:tooltip",
+        "item_condition": {
+            "type": "origins:food"
+        },
+        "text": {
+            "text": "Inedible",
+            "color": "red"
+        }
+    }
+}
