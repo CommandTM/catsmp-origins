@@ -87,6 +87,23 @@ The Cat SMP Origins are a set of origins used in the Cat SMP Minecraft server in
 
 (-) Increased villager prices 
 
+### Lauren
+(+) Sweet berries are better as food
+
+(+) Special effects in forests
+
+(+) Jump higher while running
+
+(+) Ability to sense entities around you
+
+() You gain speed and weakness on lower health
+
+(-) Less health
+
+(-) Wolves are aggressive
+
+(-) Vegetarian
+
 ### Murph
 **Land Form**
 
