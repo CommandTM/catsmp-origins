@@ -1,0 +1,13 @@
+{
+	"powers": [
+		"murp:buffolotl",
+		"murp:faster_hunger",
+		"murp:file",
+		"murp:switch_to_sea"
+	],
+	"icon": "minecraft:axolotl_bucket",
+	"order": 10,
+	"impact": 2,
+	"name": "The Axolotl",
+	"description": "Champion of the Lush Caves (There isn't much competition though)."
+}

@@ -1,0 +1,7 @@
+{
+    "type": "origins:exhaust",
+    "interval": 600,
+    "exhaustion": 2.5,
+    "name": "Faster Metabolism",
+    "description": "Your small size has a faster metabolism."
+  }

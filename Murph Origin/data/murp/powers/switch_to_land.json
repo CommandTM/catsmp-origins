@@ -1,0 +1,45 @@
+{
+    "type": "origins:active_self",
+    "name": "Form Switch",
+    "description": "Eat 8 feathers to switch back to your land form!",
+    "cooldown": 400,
+    "hud_render": {
+        "should_render": true
+    },
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:amount",
+                    "comparison": ">=",
+                    "compare_to": 8
+                },
+                {
+                    "type": "origins:ingredient",
+                    "ingredient":{
+                        "item": "minecraft:feather"
+                    }
+                }
+            ]
+        }
+    },
+    "key": {
+        "key": "key.use"
+    },
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "origin set @s origins:origin murp:mean_guy"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "clear @s minecraft:feather 8"
+            }
+        ]
+    }
+}

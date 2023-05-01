@@ -1,0 +1,15 @@
+{
+	"powers": [
+		"murp:switch_to_land",
+		"origins:aquatic",
+		"origins:water_breathing",
+		"murp:weakolotl",
+		"murp:cool_file"
+	],
+	"icon": "minecraft:axolotl_bucket",
+	"order": 10,
+	"impact": 2,
+	"name": "The Axolotl",
+	"description": "Champion of the Lush Caves (There isn't much competition though).",
+	"unchoosable": true
+}

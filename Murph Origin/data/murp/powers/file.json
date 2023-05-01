@@ -1,0 +1,9 @@
+{
+    "type": "origins:modify_swim_speed",
+    "name": "Slower Swim Speed",
+    "description": "Due to your body's mass, you swim slower.",
+    "modifier": {
+        "operation": "addition",
+        "value": -0.01
+    }
+}

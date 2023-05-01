@@ -1,0 +1,44 @@
+{
+    "type": "origins:multiple",
+    "name": "Submersion Effects",
+    "description": "You move faster in water and regenerate when submerged.",
+    "regen":{
+        "type": "origins:action_over_time",
+        "interval": 79,
+        "condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water"
+        },
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:regeneration",
+                "duration": 80,
+                "show_particles": false
+            }
+        }
+    },
+    "everything_else":{
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water"
+        },
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effects": [
+                {
+                    "effect": "minecraft:dolphins_grace",
+                    "duration": 20,
+                    "show_particles": false
+                },
+                {
+                    "effect": "minecraft:conduit_power",
+                    "duration": 20,
+                    "show_particles": false
+                }
+            ]
+        }
+    }
+}
