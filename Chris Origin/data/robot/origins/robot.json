@@ -14,7 +14,8 @@
 		"robot:rosegoldcrunch",
 		"robot:cobaltcrunch",
 		"robot:queenslimecrunch",
-		"robot:heptatizoncrunch"
+		"robot:heptatizoncrunch",
+		"robot:owball"
 	],
 	"icon": "minecraft:iron_nugget",
 	"order": 10,

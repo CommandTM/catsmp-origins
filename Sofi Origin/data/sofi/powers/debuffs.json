@@ -9,9 +9,7 @@
 			"type": "origins:apply_effect",
 			"effect": {
 				"effect": "minecraft:weakness",
-				"duration": 2,
-				"show_particles": false,
-				"show_icon": false
+				"duration": 2
 			}
 		}
 	},

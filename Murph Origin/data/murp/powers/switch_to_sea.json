@@ -4,7 +4,8 @@
     "description": "Eat 8 Feathers To Switch To Your Sea Form!",
     "cooldown": 400,
     "hud_render": {
-        "should_render": true
+        "should_render": true,
+        "bar_index": 10
     },
     "condition": {
         "type": "origins:equipped_item",

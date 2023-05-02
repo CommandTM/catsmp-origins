@@ -4,7 +4,8 @@
     "description": "Eat 8 feathers to switch back to your land form!",
     "cooldown": 400,
     "hud_render": {
-        "should_render": true
+        "should_render": true,
+        "bar_index": 9
     },
     "condition": {
         "type": "origins:equipped_item",
