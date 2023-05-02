@@ -5,7 +5,8 @@
 		"cloaker:phase",
 		"cloaker:ghost_model",
 		"cloaker:bow_prof",
-		"cloaker:to_golem"
+		"cloaker:to_golem",
+		"cloaker:dynamic_solution"
 	],
 	"icon": "travelersbackpack:iron_golem",
 	"order": 10,

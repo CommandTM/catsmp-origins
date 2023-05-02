@@ -13,7 +13,6 @@
         "type": "origins:phasing",
         "blacklist": true,
         "render_type": "blindness",
-        "view_distance": 10,
         "condition": {
             "type": "origins:power_active",
             "power": "cloaker:phase_toggle"
