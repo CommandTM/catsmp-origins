@@ -1,0 +1,15 @@
+{
+	"powers": [
+		"command:entity_detection",
+		"command:more_inventory",
+		"command:waterdamage",
+		"command:more_fire_damage",
+		"command:no_helmet",
+		"command:switch_to_phantom"
+	],
+	"icon": "minecraft:command_block",
+	"order": 10,
+	"impact": 2,
+	"name": "The Boxed",
+	"description": "Weilder of the cardboard box"
+}

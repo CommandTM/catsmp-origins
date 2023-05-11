@@ -1,0 +1,17 @@
+{
+	"powers": [
+		"command:switch_to_box",
+		"command:dynamic_solution",
+		"command:ghostly_look",
+		"command:ghostly",
+		"command:ghostly2",
+		"command:no_diet",
+		"command:weak"
+	],
+	"icon": "minecraft:barrier",
+	"unchoosable": true,
+	"order": 10,
+	"impact": 2,
+	"name": "The Unboxed",
+	"description": "No longer the weilder of the cardboard box"
+}

@@ -1,0 +1,31 @@
+{
+    "type": "origins:action_over_time",
+    "name": "Low Energy",
+    "description": "Without energy, you start slowly losing health.",
+    "interval": 1200,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:resource",
+                "resource": "llary:energy_energy_define",
+                "comparison": "==",
+                "compare_to": 0
+            },
+            {
+                "type": "origins:health",
+                "comparison": ">",
+                "compare_to": 1
+            }
+        ]
+    },
+    "entity_action": {
+        "type": "origins:damage",
+        "amount": 1,
+        "source": {
+            "name": "dryout",
+            "bypasses_armor": true,
+            "unblockable": true
+        }
+    }
+}

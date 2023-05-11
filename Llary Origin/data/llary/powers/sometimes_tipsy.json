@@ -1,0 +1,20 @@
+{
+    "type": "origins:action_over_time",
+    "name": "Sleepy Drunk",
+    "description": "When you are low on energy, you become tipsy.",
+    "interval": 1,
+    "condition": {
+        "type": "origins:resource",
+        "resource": "llary:energy_energy_define",
+        "comparison": "==",
+        "compare_to": 0
+    },
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "brewinandchewin:tipsy",
+            "duration": 120,
+            "show_particles": false
+        }
+    }
+}

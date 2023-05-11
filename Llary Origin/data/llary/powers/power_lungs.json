@@ -1,0 +1,15 @@
+{
+    "type": "origins:invulnerability",
+    "name": "Power-Lungs",
+    "description": "You can't drown because of your power lungs",
+    "condition": {
+        "type": "origins:resource",
+        "resource": "llary:energy_energy_define",
+        "comparison": ">=",
+        "compare_to": 50
+    },
+    "damage_condition": {
+        "type": "origins:name",
+        "name": "drown"
+    }
+}

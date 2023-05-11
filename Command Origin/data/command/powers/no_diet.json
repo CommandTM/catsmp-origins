@@ -1,0 +1,8 @@
+{
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+        "type": "origins:food"
+    },
+    "name": "No Mouth",
+    "description": "You have no way to eat without your box."
+}

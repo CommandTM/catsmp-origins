@@ -1,0 +1,14 @@
+{
+    "type": "origins:effect_immunity",
+    "hidden": true,
+    "condition": {
+        "type": "origins:resource",
+        "resource": "llary:energy_energy_define",
+        "comparison": ">=",
+        "compare_to": 50
+    },
+    "effects": [
+        "minecraft:poison",
+        "minecraft:hunger"
+    ]
+}

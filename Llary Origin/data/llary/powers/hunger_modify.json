@@ -1,0 +1,40 @@
+{
+    "type": "origins:multiple",
+    "name": "Power Stomach",
+    "description": "When powered, you need less food, when not powered, you need more food. It also keeps you safe from food poisoning",
+    "no_regen": {
+        "type": "origins:disable_regen",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "llary:energy_energy_define",
+            "comparison": "==",
+            "compare_to": 0
+        }
+    },
+    "less_hunger":{
+        "type": "origins:modify_exhaustion",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "llary:energy_energy_define",
+            "comparison": "<",
+            "compare_to": 49
+        },
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 1.25
+        }
+    },
+    "more_hunger": {
+        "type": "origins:modify_exhaustion",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "llary:energy_energy_define",
+            "comparison": "==",
+            "compare_to": 0
+        },
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 0.85
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "type": "origins:multiple",
+    "name": "Extendo-Reach",
+    "description": "You can reach 4 blocks farther.",
+    "active":{
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "llary:energy_energy_define",
+            "comparison": ">=",
+            "compare_to": 50
+        },
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "scale set pehkui:block_reach 2 @s"
+        }
+    },
+    "inactive": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "llary:energy_energy_define",
+            "comparison": "<=",
+            "compare_to": 49
+        },
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "scale set pehkui:block_reach 1 @s"
+        }
+    }
+}

@@ -1,0 +1,4 @@
+{
+    "type": "origins:prevent_entity_collision",
+    "hidden": true
+}

@@ -1,0 +1,8 @@
+{
+    "type": "origins:inventory",
+    "key": {
+        "key": "key.origins.primary_active"
+    },
+    "name": "The Box",
+    "description": "Your cardboard box give you move places to hold items."
+}

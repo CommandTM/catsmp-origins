@@ -1,0 +1,59 @@
+{
+    "type": "origins:multiple",
+    "name": "Moon Buffs",
+    "description": "You gain regeneration on full moons and strength on new moons.",
+    "new_moon": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "llary:energy_energy_define",
+                    "comparison": ">=",
+                    "compare_to": 50
+                },
+                {
+                    "type": "origins:predicate",
+                    "predicate": "llary:is_new_moon"
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:strength",
+                "duration": 2,
+                "show_particles": false
+            }
+        }
+    },
+    "full_moon": {
+        "type": "origins:action_over_time",
+        "interval": 100,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "llary:energy_energy_define",
+                    "comparison": ">=",
+                    "compare_to": 50
+                },
+                {
+                    "type": "origins:predicate",
+                    "predicate": "llary:is_full_moon"
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:regeneration",
+                "duration": 101,
+                "show_particles": false
+            }
+        }
+    }
+}

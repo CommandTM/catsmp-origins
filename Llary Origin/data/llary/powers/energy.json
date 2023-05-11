@@ -1,0 +1,102 @@
+{
+	"type": "origins:multiple",
+	"name": "Energy",
+	"description": "Your powers require energy. If you fall below 50% energy, your power's will no longer be useable.",
+	"energy_define": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 100,
+		"start_value": 100,
+		"hud_render": {
+			"should_render": true,
+			"bar_index": 2
+		}
+	},
+	"energy_drain": {
+		"type": "origins:action_over_time",
+		"interval": 1440,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "llary:energy_energy_define",
+			"change": -1
+		}
+	},
+	"energy_death_drain": {
+		"type": "origins:action_on_callback",
+		"entity_action_respawned": {
+			"type": "origins:execute_command",
+			"command": "resource set @s llary:energy_energy_define 0"
+		}
+	},
+	"energy_refill": {
+		"type": "origins:active_self",
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "mainhand",
+					"item_condition": {
+						"type": "origins:ingredient",
+						"ingredient": {
+							"tag": "llary:quark_runes"
+						}
+					}
+				},
+				{
+					"type": "origins:resource",
+					"resource": "llary:energy_energy_define",
+					"comparison": "<=",
+					"compare_to": 99
+				}
+			]
+		},
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:change_resource",
+					"resource": "llary:energy_energy_define",
+					"change": 9
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "clear @s #llary:quark_runes 1"
+				}
+			]
+		},
+		"key": {
+			"key": "key.use"
+		}
+	},
+	"energy_refill_rainbow": {
+		"type": "origins:active_self",
+		"condition": {
+			"type": "origins:equipped_item",
+			"equipment_slot": "mainhand",
+			"item_condition": {
+				"type": "origins:ingredient",
+				"ingredient": {
+					"item": "quark:rainbow_rune"
+				}
+			}
+		},
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:change_resource",
+					"resource": "llary:energy_energy_define",
+					"change": 100
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "clear @s quark:rainbow_rune 1"
+				}
+			]
+		},
+		"key": {
+			"key": "key.use"
+		}
+	}
+}

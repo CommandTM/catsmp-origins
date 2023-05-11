@@ -1,0 +1,36 @@
+{
+    "type": "origins:active_self",
+    "cooldown": 1200,
+    "hud_render": {
+        "should_render": true,
+        "bar_index": 13
+    },
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:orange_shulker_box"
+            }
+        }
+    },
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "origin set @s origins:origin command:the_boxed"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "clear @s minecraft:orange_shulker_box 1"
+            }
+        ]
+    },
+    "key": {
+        "key": "key.origins.secondary_active"
+    },
+    "name": "Box Up",
+    "description": "Put the box on..."
+}

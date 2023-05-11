@@ -1,0 +1,10 @@
+{
+    "type": "origins:prevent_sleep",
+    "name": "Insomniac",
+    "description": "Your insomnia is so bad, that you can't sleep.",
+    "message": "Pulvis Et Umbra Sumus",
+    "condition": {
+        "type": "origins:dimension",
+        "dimension": "minecraft:overworld"
+    }
+}

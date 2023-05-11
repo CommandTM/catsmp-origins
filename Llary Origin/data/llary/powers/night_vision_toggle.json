@@ -1,0 +1,34 @@
+{
+    "type": "origins:multiple",
+    "name": "Power Eyes",
+    "description": "You can see in the dark.",
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "retain_state": false,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "llary:energy_energy_define",
+            "comparison": ">=",
+            "compare_to": 50
+        },
+        "key": {
+            "key": "key.origins.secondary_active"
+        }
+    },
+    "jumpy": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "llary:*_toggle"
+        },
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:night_vision",
+                "duration": 400
+            }
+        }
+    }
+}

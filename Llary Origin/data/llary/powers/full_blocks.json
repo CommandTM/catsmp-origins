@@ -1,0 +1,220 @@
+{
+    "type": "origins:multiple",
+    "hidden": true,
+    "red":{
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "origins:red_llary",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "quark:red_corundum_cluster"
+                },
+                {
+                    "item": "quark:red_corundum_cluster"
+                },
+                {
+                    "item": "quark:red_corundum_cluster"
+                },
+                {
+                    "item": "quark:red_corundum_cluster"
+                }
+            ],
+            "result": {
+                "item": "quark:red_corundum"
+            }
+        }
+    },
+    "orange":{
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "origins:red_llary",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "quark:orange_corundum_cluster"
+                },
+                {
+                    "item": "quark:orange_corundum_cluster"
+                },
+                {
+                    "item": "quark:orange_corundum_cluster"
+                },
+                {
+                    "item": "quark:orange_corundum_cluster"
+                }
+            ],
+            "result": {
+                "item": "quark:orange_corundum"
+            }
+        }
+    },
+    "yellow":{
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "origins:red_llary",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "quark:yellow_corundum_cluster"
+                },
+                {
+                    "item": "quark:yellow_corundum_cluster"
+                },
+                {
+                    "item": "quark:yellow_corundum_cluster"
+                },
+                {
+                    "item": "quark:yellow_corundum_cluster"
+                }
+            ],
+            "result": {
+                "item": "quark:yellow_corundum"
+            }
+        }
+    },
+    "green":{
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "origins:red_llary",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "quark:green_corundum_cluster"
+                },
+                {
+                    "item": "quark:green_corundum_cluster"
+                },
+                {
+                    "item": "quark:green_corundum_cluster"
+                },
+                {
+                    "item": "quark:green_corundum_cluster"
+                }
+            ],
+            "result": {
+                "item": "quark:green_corundum"
+            }
+        }
+    },
+    "blue":{
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "origins:red_llary",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "quark:blue_corundum_cluster"
+                },
+                {
+                    "item": "quark:blue_corundum_cluster"
+                },
+                {
+                    "item": "quark:blue_corundum_cluster"
+                },
+                {
+                    "item": "quark:blue_corundum_cluster"
+                }
+            ],
+            "result": {
+                "item": "quark:blue_corundum"
+            }
+        }
+    },
+    "indigo":{
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "origins:red_llary",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "quark:indigo_corundum_cluster"
+                },
+                {
+                    "item": "quark:indigo_corundum_cluster"
+                },
+                {
+                    "item": "quark:indigo_corundum_cluster"
+                },
+                {
+                    "item": "quark:indigo_corundum_cluster"
+                }
+            ],
+            "result": {
+                "item": "quark:indigo_corundum"
+            }
+        }
+    },
+    "violet":{
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "origins:red_llary",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "quark:violet_corundum_cluster"
+                },
+                {
+                    "item": "quark:violet_corundum_cluster"
+                },
+                {
+                    "item": "quark:violet_corundum_cluster"
+                },
+                {
+                    "item": "quark:violet_corundum_cluster"
+                }
+            ],
+            "result": {
+                "item": "quark:violet_corundum"
+            }
+        }
+    },
+    "white":{
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "origins:red_llary",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "quark:white_corundum_cluster"
+                },
+                {
+                    "item": "quark:white_corundum_cluster"
+                },
+                {
+                    "item": "quark:white_corundum_cluster"
+                },
+                {
+                    "item": "quark:white_corundum_cluster"
+                }
+            ],
+            "result": {
+                "item": "quark:white_corundum"
+            }
+        }
+    },
+    "black":{
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "origins:red_llary",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "quark:black_corundum_cluster"
+                },
+                {
+                    "item": "quark:black_corundum_cluster"
+                },
+                {
+                    "item": "quark:black_corundum_cluster"
+                },
+                {
+                    "item": "quark:black_corundum_cluster"
+                }
+            ],
+            "result": {
+                "item": "quark:black_corundum"
+            }
+        }
+    }
+}

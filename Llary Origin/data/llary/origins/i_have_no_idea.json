@@ -1,0 +1,22 @@
+{
+	"powers": [
+		"llary:energy",
+		"llary:jump_boost_toggle",
+		"llary:extendo_reach",
+		"llary:moon_buffs",
+		"llary:power_lungs",
+		"llary:no_sleep",
+		"llary:health_drain",
+		"llary:full_blocks",
+		"llary:unluck_arua",
+		"llary:hunger_modify",
+		"llary:sometimes_tipsy",
+		"llary:hungernt",
+		"llary:night_vision_toggle"
+	],
+	"icon": "quark:white_rune",
+	"order": 10,
+	"impact": 3,
+	"name": "The Scientist",
+	"description": "User of nightmare fuel, expiementer of realities"
+}

@@ -1,0 +1,31 @@
+{
+    "type": "origins:action_over_time",
+    "hidden": true,
+    "interval": 1,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+            "type": "origins:power_active",
+            "power": "command:ghostly_toggle"
+            },
+            {
+                "type": "origins:in_block",
+                "block_condition": {
+                    "type": "origins:offset",
+                    "condition": {
+                        "type": "origins:movement_blocking"
+                    },
+                    "y": 1
+                }
+            }
+        ]
+    },
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:blindness",
+            "duration": 40
+        }
+    }
+}

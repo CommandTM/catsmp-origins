@@ -1,0 +1,16 @@
+{
+    "type": "origins:damage_over_time",
+    "interval": 20,
+    "condition": {
+        "type": "origins:on_fire"
+    },
+    "damage": 2,
+    "damage_source": {
+        "fire": true,
+        "bypasses_armor": true,
+        "name": "inFire"
+    },
+    "protection_enchantment": "minecraft:fire_protection",
+    "name": "Fammable Box",
+    "description": "Your box is fammable, makigng you take more damage."
+}

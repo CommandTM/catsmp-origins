@@ -49,6 +49,37 @@ The Cat SMP Origins are a set of origins used in the Cat SMP Minecraft server in
 
 (-) Slower Speed
 
+### Command
+**Boxed Form**
+
+(+) Entity Detection
+
+(+) 9 Extra Inventory Spots
+
+(-) Damage While In Water
+
+(-) Fire Does More Damage
+
+(-) No Helmet
+
+
+
+{Switch, 1 Minute Cooldown, Boxed > Phantom Give 1 Shulker Box, Phantom > Boxed Costs 1 Shulker Box}
+
+
+
+**Phantom Form**
+
+(+) You Can Phase Through Blocks (+ Blindness And Weakness)
+
+() You Have No Entity Collison
+
+() You Are Transparent
+
+(-) You Can't Eat
+
+(-) Less Health
+
 ### Derred
 (+) Faster base speed
 
@@ -100,6 +131,35 @@ The Cat SMP Origins are a set of origins used in the Cat SMP Minecraft server in
 (-) Wolves are aggressive
 
 (-) Vegetarian
+
+### Llary
+(+) Extendo reach
+
+(+) Togglible jump boost
+
+(+) Immunity to hunger and poison
+
+(+) Slower hunger drain
+
+(+) Togglible night vision
+
+(+) Regen on full moon
+
+(+) Strength on new moon
+
+(-) Power system, refill with runes, lower power, less upside, more downsides
+
+(-) Unluck aura with no power
+
+(-) Can't sleep
+
+(-) Lose all power after dying
+
+(-) Lose all abilities with no power
+
+(-) No natural regen with no power
+
+(-) Faster hunger drain with no power
 
 ### Michael
 () “Roll” for random effect

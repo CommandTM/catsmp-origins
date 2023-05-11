@@ -1,0 +1,30 @@
+{
+    "type": "origins:action_over_time",
+    "name": "Snake Eyes",
+    "description": "You are unluck, and everyone around you is also unlucky.",
+    "interval": 1,
+    "condition": {
+        "type": "origins:resource",
+        "resource": "llary:energy_energy_define",
+        "comparison": "==",
+        "compare_to": 0
+    },
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "execute at @s run effect give @e[distance=1..5] minecraft:unluck 12"
+            },
+            {
+                "type": "origins:apply_effect",
+                "effects": [
+                    {
+                        "effect": "minecraft:unluck",
+                        "duration": 240
+                    }
+                ]
+            }
+        ]
+    }
+}

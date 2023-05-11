@@ -1,0 +1,33 @@
+{
+    "type": "origins:multiple",
+    "name": "Jumpy",
+    "description": "You can enable extra jump height.",
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "retain_state": false,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "llary:energy_energy_define",
+            "comparison": ">=",
+            "compare_to": 50
+        },
+        "key": "key.origins.primary_active"
+    },
+    "jumpy": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "llary:jump_boost_toggle_toggle"
+        },
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:jump_boost",
+                "duration": 2,
+                "amplifier": 2
+            }
+        }
+    }
+}
