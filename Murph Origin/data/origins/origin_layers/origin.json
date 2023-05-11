@@ -1,6 +1,7 @@
 {
   "replace": false,
   "origins": [
-    "murp:mean_guy"
+    "murp:mean_guy",
+    "murp:nice_guy"
   ]
 }
