@@ -101,6 +101,29 @@ The Cat SMP Origins are a set of origins used in the Cat SMP Minecraft server in
 
 (-) Vegetarian
 
+### Michael
+() “Roll” for random effect
+    (+) Regen
+    (+) Speed
+    (+) Saturation
+    (+) Poison
+    (+) Slowness
+    (+) Hunger
+
+() Variable Attack Bonus (-3 - +3 modifier)
+
+() Absorb mob to gain some attributes (lose on taking damage)
+    () Skeleton
+        (+) Fire arrows at will
+        (-) Burn in daylight
+    () Creeper
+        (+) Explode on will
+        (-) It also damages you
+    () Enderman
+        (+) Throw ender pearls at will
+        () Taller
+        (-) Water Hurts
+
 ### Murph
 **Land Form**
 

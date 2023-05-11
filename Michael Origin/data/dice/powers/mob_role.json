@@ -1,0 +1,384 @@
+{
+    "type": "origins:multiple",
+    "name": "Role-Player",
+    "description": "You like to role play, and can take up some of the special abilities from Skeletons, Creepers, and Endermen.",
+    "define": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 3,
+        "hud_render": {
+            "should_render": false
+        },
+        "start_value": 0
+    },
+    "reset":{
+        "type": "origins:action_when_damage_taken",
+        "cooldown": 1,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "dice:mob_role_define",
+                    "operation": "set",
+                    "change": 0
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:height 1 @s"
+                }
+            ]
+        }
+    },
+    "skeleton_set": {
+        "type": "origins:action_on_entity_use",
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:skeleton"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "dice:mob_role_role_cooldown",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        },
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "tp @s ~ -64 ~"
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "dice:mob_role_define",
+                        "operation": "set",
+                        "change": 1
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "scale set pehkui:height 1 @s"
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:trigger_cooldown",
+                        "power": "dice:mob_role_role_cooldown"
+                    }
+                }
+            ]
+        }
+    },
+    "creeper_set": {
+        "type": "origins:action_on_entity_use",
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:creeper"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "dice:mob_role_role_cooldown",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        },
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "tp @s ~ -64 ~"
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "dice:mob_role_define",
+                        "operation": "set",
+                        "change": 2
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "scale set pehkui:height 1 @s"
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:trigger_cooldown",
+                        "power": "dice:mob_role_role_cooldown"
+                    }
+                }
+            ]
+        }
+    },
+    "enderman_set": {
+        "type": "origins:action_on_entity_use",
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:enderman"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "dice:mob_role_role_cooldown",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        },
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "tp @s ~ -64 ~"
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "dice:mob_role_define",
+                        "operation": "set",
+                        "change": 3
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "scale set pehkui:height 1.5 @s"
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:trigger_cooldown",
+                        "power": "dice:mob_role_role_cooldown"
+                    }
+                }
+            ]
+        }
+    },
+    "role_cooldown": {
+        "type": "origins:cooldown",
+        "cooldown": 6000,
+        "hud_render": {
+            "should_render": true,
+            "bar_index": 15
+        }
+    },
+    "no_visual": {
+        "type": "origins:action_over_time",
+        "interval": 5,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "dice:mob_role_define",
+            "comparison": "==",
+            "compare_to": 0
+        },
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "title @s actionbar \"\""
+        }
+    },
+    "skeleton_visual": {
+        "type": "origins:action_over_time",
+        "interval": 5,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "dice:mob_role_define",
+            "comparison": "==",
+            "compare_to": 1
+        },
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "title @s actionbar \"SKELETON\""
+        }
+    },
+    "creeper_visual": {
+        "type": "origins:action_over_time",
+        "interval": 5,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "dice:mob_role_define",
+            "comparison": "==",
+            "compare_to": 2
+        },
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "title @s actionbar \"CREEPER\""
+        }
+    },
+    "enderman_visual": {
+        "type": "origins:action_over_time",
+        "interval": 5,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "dice:mob_role_define",
+            "comparison": "==",
+            "compare_to": 3
+        },
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "title @s actionbar \"ENDERMAN\""
+        }
+    },
+    "skeleton_up": {
+            "type": "origins:fire_projectile",
+            "entity_type": "minecraft:arrow",
+            "cooldown": 40,
+            "hud_render": {
+                "should_render": false
+            },
+            "condition": {
+                "type": "origins:resource",
+                "resource": "dice:mob_role_define",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "key": {
+                "key": "key.origins.secondary_active"
+            }
+    },
+    "skeleton_down":{
+        "type": "origins:burn",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "dice:mob_role_define",
+                    "comparison": "==",
+                    "compare_to": 1
+                },
+                {
+                    "type": "origins:exposed_to_sun"
+                }
+            ]
+        },
+        "interval": 1,
+        "burn_duration": 5
+    },
+    "creeper": {
+        "type": "origins:active_self",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "dice:mob_role_define",
+            "comparison": "==",
+            "compare_to": 2
+        },
+        "entity_action": {
+            "type": "origins:explode",
+            "power": 3,
+            "destruction_type": "none"
+        },
+        "key": {
+            "key": "key.origins.secondary_active"
+        }
+    },
+    "enderman_up": {
+        "type": "origins:fire_projectile",
+        "cooldown":40,
+        "hud_render": {
+            "should_render": false
+        },
+        "entity_type": "origins:enderian_pearl",
+        "sound": "minecraft:entity.ender_pearl.throw",
+        "speed": 1.5,
+        "divergence": 1,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "dice:mob_role_define",
+            "comparison": "==",
+            "compare_to": 3
+        },
+        "key": {
+            "key": "key.origins.secondary_active"
+        }
+    },
+    "enderman_down": {
+        "type": "origins:damage_over_time",
+        "interval": 1,
+        "damage": 10,
+        "damage_source": {
+            "name": "magic"
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "dice:mob_role_define",
+                    "comparison": "==",
+                    "compare_to": 3
+                },
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:in_rain"
+                        },
+                        {
+                            "type": "origins:in_block",
+                            "block_condition": {
+                                "type": "origins:fluid",
+                                "fluid_condition": {
+                                    "type": "origins:in_tag",
+                                    "tag": "minecraft:water"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

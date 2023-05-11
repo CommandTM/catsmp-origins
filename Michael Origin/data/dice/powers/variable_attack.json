@@ -1,0 +1,184 @@
+{
+	"type": "origins:multiple",
+	"name": "Attack Rolls",
+	"description": "Your attacks now do a random amount of damage",
+	"define": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 6,
+		"hud_render": {
+			"should_render": false
+		},
+		"start_value": 3
+	},
+	"changer": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:choice",
+			"actions": [
+				{
+					"element": {
+						"type": "origins:change_resource",
+						"resource": "dice:variable_attack_define",
+						"operation": "set",
+						"change": 0
+					},
+					"weight": 1
+				},
+				{
+					"element": {
+						"type": "origins:change_resource",
+						"resource": "dice:variable_attack_define",
+						"operation": "set",
+						"change": 1
+					},
+					"weight": 1
+				},
+				{
+					"element": {
+						"type": "origins:change_resource",
+						"resource": "dice:variable_attack_define",
+						"operation": "set",
+						"change": 2
+					},
+					"weight": 1
+				},
+				{
+					"element": {
+						"type": "origins:change_resource",
+						"resource": "dice:variable_attack_define",
+						"operation": "set",
+						"change": 3
+					},
+					"weight": 1
+				},
+				{
+					"element": {
+						"type": "origins:change_resource",
+						"resource": "dice:variable_attack_define",
+						"operation": "set",
+						"change": 4
+					},
+					"weight": 1
+				},
+				{
+					"element": {
+						"type": "origins:change_resource",
+						"resource": "dice:variable_attack_define",
+						"operation": "set",
+						"change": 5
+					},
+					"weight": 1
+				},
+				{
+					"element": {
+						"type": "origins:change_resource",
+						"resource": "dice:variable_attack_define",
+						"operation": "set",
+						"change": 6
+					},
+					"weight": 1
+				}
+			]
+		}
+	},
+	"minus_three": {
+		"type": "origins:conditioned_attribute",
+		"condition": {
+			"type": "origins:resource",
+			"resource": "dice:variable_attack_define",
+			"comparison": "==",
+			"compare_to": 0
+		},
+		"modifier": {
+			"attribute": "minecraft:generic.attack_damage",
+			"operation": "addition",
+			"value": -3
+		}
+	},
+	"minus_two": {
+		"type": "origins:conditioned_attribute",
+		"condition": {
+			"type": "origins:resource",
+			"resource": "dice:variable_attack_define",
+			"comparison": "==",
+			"compare_to": 1
+		},
+		"modifier": {
+			"attribute": "minecraft:generic.attack_damage",
+			"operation": "addition",
+			"value": -2
+		}
+	},
+	"minus_one": {
+		"type": "origins:conditioned_attribute",
+		"condition": {
+			"type": "origins:resource",
+			"resource": "dice:variable_attack_define",
+			"comparison": "==",
+			"compare_to": 2
+		},
+		"modifier": {
+			"attribute": "minecraft:generic.attack_damage",
+			"operation": "addition",
+			"value": -1
+		}
+	},
+	"zero": {
+		"type": "origins:conditioned_attribute",
+		"condition": {
+			"type": "origins:resource",
+			"resource": "dice:variable_attack_define",
+			"comparison": "==",
+			"compare_to": 3
+		},
+		"modifier": {
+			"attribute": "minecraft:generic.attack_damage",
+			"operation": "addition",
+			"value": 0
+		}
+	},
+	"add_one": {
+		"type": "origins:conditioned_attribute",
+		"condition": {
+			"type": "origins:resource",
+			"resource": "dice:variable_attack_define",
+			"comparison": "==",
+			"compare_to": 4
+		},
+		"modifier": {
+			"attribute": "minecraft:generic.attack_damage",
+			"operation": "addition",
+			"value": 1
+		}
+	},
+	"add_two": {
+		"type": "origins:conditioned_attribute",
+		"condition": {
+			"type": "origins:resource",
+			"resource": "dice:variable_attack_define",
+			"comparison": "==",
+			"compare_to": 5
+		},
+		"modifier": {
+			"attribute": "minecraft:generic.attack_damage",
+			"operation": "addition",
+			"value": 2
+		}
+	},
+	"add_three": {
+		"type": "origins:conditioned_attribute",
+		"condition": {
+			"type": "origins:resource",
+			"resource": "dice:variable_attack_define",
+			"comparison": "==",
+			"compare_to": 6
+		},
+		"modifier": {
+			"attribute": "minecraft:generic.attack_damage",
+			"operation": "addition",
+			"value": 3
+		}
+	}
+}

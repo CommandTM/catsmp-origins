@@ -1,0 +1,12 @@
+{
+	"powers": [
+		"dice:variable_attack",
+		"dice:potion_roll",
+		"dice:mob_role"
+	],
+	"icon": "casinocraft:dice_basic_red",
+	"order": 10,
+	"impact": 3,
+	"name": "The Dice Roller",
+	"description": "Use the power of the dice to your advantage."
+}
