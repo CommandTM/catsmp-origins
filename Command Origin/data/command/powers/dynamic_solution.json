@@ -18,6 +18,12 @@
                     },
                     "y": 1
                 }
+            },
+            {
+                "type": "origins:resource",
+                "resource": "command:form",
+                "comparison": "==",
+                "compare_to": 1
             }
         ]
     },

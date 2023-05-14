@@ -2,7 +2,18 @@
     "type": "origins:damage_over_time",
     "interval": 20,
     "condition": {
-        "type": "origins:on_fire"
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:on_fire"
+            },
+            {
+                "type": "origins:resource",
+                "resource": "command:form",
+                "comparison": "==",
+                "compare_to": 0
+            }
+        ]
     },
     "damage": 2,
     "damage_source": {

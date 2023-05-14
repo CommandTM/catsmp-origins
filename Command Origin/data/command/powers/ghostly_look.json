@@ -1,6 +1,12 @@
 {
     "hidden": true,
     "type": "origins:model_color",
+    "condition": {
+        "type": "origins:resource",
+        "resource": "command:form",
+        "comparison": "==",
+        "compare_to": 1
+    },
     "alpha": 0.5,
     "red": 0.82,
     "green": 0.81,

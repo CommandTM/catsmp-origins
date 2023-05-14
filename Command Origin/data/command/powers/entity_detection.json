@@ -13,6 +13,15 @@
 				"condition": {
 					"type": "origins:living"
 				}
+			},
+			{
+				"type": "origins:actor_condition",
+				"condition": {
+					"type": "origins:resource",
+					"resource": "command:form",
+					"comparison": "==",
+					"compare_to": 0
+				}
 			}
 		]
 	},

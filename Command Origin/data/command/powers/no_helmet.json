@@ -1,5 +1,11 @@
 {
     "type": "origins:restrict_armor",
+    "condition": {
+        "type": "origins:resource",
+        "resource": "command:form",
+        "comparison": "==",
+        "compare_to": 0
+    },
     "head": {
         "type": "origins:ingredient",
         "ingredient":{

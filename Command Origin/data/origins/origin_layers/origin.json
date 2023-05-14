@@ -1,7 +1,6 @@
 {
   "replace": false,
   "origins": [
-    "command:the_boxed",
-    "command:the_unboxed"
+    "command:the_boxed"
   ]
 }

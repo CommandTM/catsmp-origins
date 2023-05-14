@@ -1,4 +1,10 @@
 {
     "type": "origins:prevent_entity_collision",
+    "condition": {
+        "type": "origins:resource",
+        "resource": "command:form",
+        "comparison": "==",
+        "compare_to": 1
+    },
     "hidden": true
 }

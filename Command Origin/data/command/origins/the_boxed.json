@@ -5,7 +5,15 @@
 		"command:waterdamage",
 		"command:more_fire_damage",
 		"command:no_helmet",
-		"command:switch_to_phantom"
+		"command:dynamic_solution",
+		"command:ghostly_look",
+		"command:ghostly",
+		"command:ghostly2",
+		"command:no_diet",
+		"command:switch_to_phantom",
+		"command:switch_to_box",
+		"command:form",
+		"command:weak"
 	],
 	"icon": "minecraft:command_block",
 	"order": 10,

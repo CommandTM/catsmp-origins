@@ -47,5 +47,25 @@
                 "duration": 40
             }
         }
+    },
+    "anti_deadly_walls": {
+        "type": "origins:modify_damage_taken",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "cloaker:phase_toggle"
+                }
+            ]
+        },
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "inWall"
+        },
+        "modifier": {
+            "operation": "multiply_total",
+            "value": -1
+        }
     }
 }

@@ -2,29 +2,45 @@
     "type": "origins:active_self",
     "cooldown": 1200,
     "hud_render": {
-        "should_render": true,
-        "bar_index": 13
+        "should_render": false
     },
     "condition": {
-        "type": "origins:equipped_item",
-        "equipment_slot": "mainhand",
-        "item_condition": {
-            "type": "origins:ingredient",
-            "ingredient": {
-                "item": "minecraft:orange_shulker_box"
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:orange_shulker_box"
+                    }
+                }
+            },
+            {
+                "type": "origins:resource",
+                "resource": "command:form",
+                "comparison": "==",
+                "compare_to": 1
             }
-        }
+        ]
     },
     "entity_action": {
         "type": "origins:and",
         "actions": [
             {
-                "type": "origins:execute_command",
-                "command": "origin set @s origins:origin command:the_boxed"
-            },
+                "type": "origins:change_resource",
+                "resource": "command:form",
+                "operation": "set",
+                "change": 0
+            },  
             {
                 "type": "origins:execute_command",
                 "command": "clear @s minecraft:orange_shulker_box 1"
+            },
+            {
+                "type": "origins:trigger_cooldown",
+                "power": "command:switch_to_phantom"
             }
         ]
     },
