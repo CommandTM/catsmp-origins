@@ -1,9 +1,23 @@
 {
-    "type": "origins:target_action_on_hit",
-    "cooldown": 0,
-    "entity_action": {
-        "type": "origins:set_on_fire",
-        "duration": 8
+    "type": "origins:multiple",
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": true,
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    },
+    "the_hand_warmers": {
+        "type": "origins:target_action_on_hit",
+        "cooldown": 0,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "fruit_lover:natural_hand_warmers_toggle"
+        },
+        "entity_action": {
+            "type": "origins:set_on_fire",
+            "duration": 8
+        }
     },
     "name": "Natural Fire Aspect",
     "description": "Your attacks set enemies on fire"
